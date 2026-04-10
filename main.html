@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐍 Snake Game</h1>
+            <p>Use arrow keys or WASD to move. Press SPACE to pause/resume.</p>
+        </header>
+
+        <div class="game-info">
+            <div class="score-board">
+                <div class="info-item">
+                    <span>Score:</span>
+                    <span id="score">0</span>
+                </div>
+                <div class="info-item">
+                    <span>High Score:</span>
+                    <span id="highScore">0</span>
+                </div>
+                <div class="info-item">
+                    <span>Level:</span>
+                    <span id="level">1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start Game</button>
+            <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+
+        <div class="status-message" id="statusMessage"></div>
+
+        <footer>
+            <p>&copy; 2026 Snake Game. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
